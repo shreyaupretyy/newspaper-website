@@ -1,0 +1,8 @@
+{% extends "CRUD/base.html" %} {% block title %} Log In {% endblock title %} {% block content %}
+<h2>Log In</h2>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button class="btn btn-outline-info ml-2" type="submit">Log In</button>
+</form>
+<p class="m-2 font-weight-bold">Please Sign Up here if you don't have an account <a href="{% url 'signup' %}">Sign Up</a></p>
+{% endblock content %}

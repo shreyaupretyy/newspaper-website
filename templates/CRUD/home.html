@@ -1,0 +1,12 @@
+{% extends "CRUD/base.html" %} {% block title %} Home {% endblock title %} {% block content %}
+<br />
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-2">The Daily Express</h1>
+    <hr class="my-2" />
+    <p class="lead">
+      <a class="btn btn-outline-dark btn-lg" href="{% url 'article_list' %}" role="button">View Posted Articles</a>
+    </p>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,7 @@
+{% extends 'CRUD/base.html' %} {% block content %}
+<h1>New article</h1>
+<form action="" method="POST">
+  {% csrf_token %} {{form.as_p}}
+  <button class="btn btn-outline-success ml-2" type="submit">Save</button>
+</form>
+{% endblock content %}
